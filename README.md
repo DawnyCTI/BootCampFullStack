@@ -16,4 +16,3 @@ BootCampFullStack es un proyecto educativo personal donde aprenderé el desarrol
 - Conocimientos básicos de programación.
 - Ganas de aprender y desarrollar mis habilidades en el desarrollo web con C#.
 
-## Instrucciones de Instalación
