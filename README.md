@@ -1,8 +1,12 @@
-# BootCamp FullStack
+# BootCampFullStack
 
-## Descripción
+## About
 
-BootCampFullStack es un proyecto educativo personal donde aprenderé el desarrollo completo de aplicaciones web utilizando C#. Este repositorio contendrá ejercicios, ejemplos de código y proyectos prácticos para adquirir habilidades en el desarrollo full stack con C#.
+BootCampFullStack es un proyecto educativo personal donde aprenderé el desarrollo completo de aplicaciones web utilizando C#. Este repositorio contendrá ejercicios, ejemplos de código y proyectos prácticos para adquirir habilidades en el desarrollo full stack con C#. 
+
+- **No description:** Este proyecto está en sus etapas iniciales, y la descripción completa se añadirá a medida que avance en mi aprendizaje y desarrollo.
+- **No website:** Actualmente, no hay un sitio web asociado con este proyecto.
+- **No topics provided:** Los temas y tecnologías específicos se agregarán conforme desarrolle el proyecto.
 
 ## Características
 
@@ -16,3 +20,8 @@ BootCampFullStack es un proyecto educativo personal donde aprenderé el desarrol
 - Conocimientos básicos de programación.
 - Ganas de aprender y desarrollar mis habilidades en el desarrollo web con C#.
 
+## Instrucciones de Instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/DawnyCTI/BootCampFullStack.git
