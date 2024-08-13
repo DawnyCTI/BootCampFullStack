@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 2 | JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p>En esta semana trabajamos con el lenguajes JavaScript</p>
+    <p>JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web interactivas.</p>
+
+    <h2>JavaScript en HTML</h2>
+    <p>Para incluir JavaScript en un archivo HTML, se debe utilizar la etiqueta <code>&lt;script&gt;</code>.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            &lt;script&gt;
+                document.write("Hola Mundo!");
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>JavaScript en un archivo externo</h2>
+    <p>Para incluir JavaScript en un archivo externo, se debe utilizar la etiqueta <code>&lt;script&gt;</code> con el atributo <code>src</code>.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            &lt;script src="mi_script.js"&gt;&lt;/script&gt;
+        </code>
+    </pre>
+
+    <h2>Comentarios en JavaScript</h2>
+    <p>Los comentarios en JavaScript se pueden hacer de dos formas:</p>
+    <pre>
+        <code>
+            // Este es un comentario de una línea
+
+            /* Este es un comentario
+            de varias líneas */
+        </code>
+    </pre>
+
+    <h2>Variables en JavaScript</h2>
+    <p>En JavaScript, las variables se declaran con la palabra clave <code>var</code>.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            var x = 5;
+            var y = 6;
+            var z = x + y;
+        </code>
+    </pre>
+
+    <h2>Tipos de datos en JavaScript</h2>
+    <p>En JavaScript, los tipos de datos se dividen en dos categorías: primitivos y no primitivos.</p>
+    <p>Los tipos de datos primitivos son: <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code>.</p>
+
+    <h2>Operadores en JavaScript</h2>
+    <p>En JavaScript, los operadores se utilizan para realizar operaciones en variables y valores.</p>
+    <p>Los operadores aritméticos son: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>.</p>
+
+    <h2>Funciones en JavaScript</h2>
+    <p>En JavaScript, las funciones se declaran con la palabra clave <code>function</code>.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            function myFunction(p1, p2) {
+                return p1 * p2;
+            }
+        </code>
+    </pre>
+
+    <h2>Eventos en JavaScript</h2>
+    <p>En JavaScript, los eventos son acciones que se pueden realizar en una página web.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            &lt;button onclick="myFunction()"&gt;Haz clic&lt;/button&gt;
+        </code>
+    </pre>
+
+    <h2>Objetos en JavaScript</h2>
+    <p>En JavaScript, los objetos son variables que pueden contener muchas propiedades.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            var person = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+                eyeColor: "blue"
+            };
+        </code>
+    </pre>
+
+    <h2>Arrays en JavaScript</h2>
+    <p>En JavaScript, los arrays son variables que pueden contener muchos valores.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            var cars = ["Saab", "Volvo", "BMW"];
+        </code>
+    </pre>
+
+    <h2>Condicionales en JavaScript</h2>
+    <p>En JavaScript, los condicionales se utilizan para tomar decisiones basadas en diferentes condiciones.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            if (hour < 18) {
+                greeting = "Good day";
+            } else {
+                greeting = "Good evening";
+            }
+        </code>
+    </pre>
+
+    <h2>Bucles en JavaScript</h2>
+    <p>En JavaScript, los bucles se utilizan para repetir bloques de código.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            for (i = 0; i < 5; i++) {
+                text += "The number is " + i + "<br>";
+            }
+        </code>
+    </pre>
+
+    <h2>Objeto Date en JavaScript</h2>
+    <p>En JavaScript, el objeto <code>Date</code> se utiliza para trabajar con fechas y horas.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        </code>
+    </pre>
+
+    <h2>Expresiones regulares en JavaScript</h2>
+    <p>En JavaScript, las expresiones regulares se utilizan para buscar y reemplazar texto.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            var str = "Visit W3Schools!";
+            var patt = /w3schools/i;
+            var result = str.match(patt);
+        </code>
+    </pre>
+
+    <h2>Errores en JavaScript</h2>
+    <p>En JavaScript, los errores se pueden manejar con la declaración <code>try...catch</code>.</p>
+    <p>Por ejemplo:</p>
+    <pre>
+        <code>
+            try {
+                adddlert("Welcome guest!");
+            }
+            catch(err) {
+                document.getElementById("demo").innerHTML = err.message;
+            }
+        </code>
+    </pre>
+</body>
+</html>
