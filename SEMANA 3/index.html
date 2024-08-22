@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript POO</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        pre {
+            background-color: #333;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        pre code {
+            font-family: "Courier New", Courier, monospace;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instroduccion a la Programacion Orientada a Objetos (POO)</h1>
+    <p>La programacion orientada a objetos es un paradigma de programacion que se basa en el uso de clases y objetos.</p>
+    <p>Una clase es una plantilla para crear objetos, un objeto es una instancia de una clase.</p>
+    <p>En JavaScript, una clase es un tipo de funcion, pero en lugar de usar la palabra clave function para crearla, usamos la palabra clave class.</p>
+    <p>Para crear un objeto, usamos la palabra clave new.</p>
+
+    <h2>Ejemplo de una clase en JavaScript</h2>
+    <pre>
+        class Persona {
+            constructor(nombre, edad) {
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+        }
+
+        let persona1 = new Persona('Juan', 30);
+        let persona2 = new Persona('Maria', 25);
+
+        console.log(persona1);
+        console.log(persona2);
+    </pre>
+
+    <h2>Ejemplo de una clase con metodos en JavaScript</h2>
+    <pre>
+        class Persona {
+            constructor(nombre, edad) {
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+
+            saludar() {
+                console.log('Hola, mi nombre es ' + this.nombre);
+            }
+        }
+
+        let persona1 = new Persona('Juan', 30);
+        let persona2 = new Persona('Maria', 25);
+
+        persona1.saludar();
+        persona2.saludar();
+
+        console.log(persona1);
+        console.log(persona2);
+    </pre>
+
+    <h2>Ejemplo de una clase con metodos y propiedades en JavaScript</h2>
+    <pre>
+        class Persona {
+            constructor(nombre, edad) {
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+
+            saludar() {
+                console.log('Hola, mi nombre es ' + this.nombre);
+            }
+
+            despedir() {
+                console.log('Adios, me llamo ' + this.nombre);
+            }
+        }
+
+        let persona1 = new Persona('Juan', 30);
+        let persona2 = new Persona('Maria', 25);
+
+        persona1.saludar();
+        persona1.despedir();
+
+        persona2.saludar();
+        persona2.despedir();
+
+        console.log(persona1);
+        console.log(persona2);
+    </pre>
+
+    <h2>Ejemplo de una clase con metodos y propiedades privadas en JavaScript</h2>
+    <pre>
+        class Persona {
+            #nombre;
+            #edad;
+
+            constructor(nombre, edad) {
+                this.#nombre = nombre;
+                this.#edad = edad;
+            }
+
+            saludar() {
+                console.log('Hola, mi nombre es ' + this.#nombre);
+            }
+
+            despedir() {
+                console.log('Adios, me llamo ' + this.#nombre);
+            }
+        }
+
+        let persona1 = new Persona('Juan', 30);
+        let persona2 = new Persona('Maria', 25);
+
+        persona1.saludar();
+        persona1.despedir();
+
+        persona2.saludar();
+        persona2.despedir();
+
+        console.log(persona1);
+        console.log(persona2);
+
+        console.log(persona1.nombre); // undefined
+        console.log(persona1.edad); // undefined
+    </pre>
+
+    <h2>Ejemplo de una clase con metodos y propiedades privadas en JavaScript</h2>
+
+    <pre>
+        class Persona {
+            #nombre;
+            #edad;
+
+            constructor(nombre, edad) {
+                this.#nombre = nombre;
+                this.#edad = edad;
+            }
+
+            saludar() {
+                console.log('Hola, mi nombre es ' + this.#nombre);
+            }
+
+            despedir() {
+                console.log('Adios, me llamo ' + this.#nombre);
+            }
+
+            getNombre() {
+                return this.#nombre;
+            }
+
+            getEdad() {
+                return this.#edad;
+            }
+
+            setNombre(nombre) {
+                this.#nombre = nombre;
+            }
+
+            setEdad(edad) {
+                this.#edad = edad;
+            }
+        }
+
+        let persona1 = new Persona('Juan', 30);
+        let persona2 = new Persona('Maria', 25);
+
+        persona1.saludar();
+        persona1.despedir();
+
+        persona2.saludar();
+        persona2.despedir();
+
+        console.log(persona1.getNombre());
+        console.log(persona1.getEdad());
+
+        persona1.setNombre('Pedro');
+        persona1.setEdad(35);
+
+        console.log(persona1.getNombre());
+        console.log(persona1.getEdad());
+
+        console.log(persona1);
+        console.log(persona2);
+    </pre>
+    
+</body>
+</html>
