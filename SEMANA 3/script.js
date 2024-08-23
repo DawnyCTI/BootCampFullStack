@@ -32,7 +32,6 @@ class Persona {
     }
 }
 
-
 let dawny = new Persona(
     'Dawny', 
     21, 
