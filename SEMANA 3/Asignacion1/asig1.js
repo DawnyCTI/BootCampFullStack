@@ -19,27 +19,41 @@ class Persona {
         }
     }
 
-    mostrarIntereses() {
-        return this.intereses.length > 0 ? this.intereses.join(', ') : 'No tiene intereses registrados.';
-    }
-
     mostrarInformacion() {
-        console.log(`Nombre: ${this.nombre}`);
-        console.log(`Edad: ${this.edad !== null ? this.edad + ' años' : 'No especificada'}`);
-        console.log(`Intereses: ${this.mostrarIntereses()}`);
+        const infoDiv = document.getElementById('persona-info');
+        infoDiv.innerHTML = `
+            <p><strong>Nombre:</strong> ${this.nombre}</p>
+            <p><strong>Edad:</strong> ${this.edad !== null ? this.edad + ' años' : 'No especificada'}</p>
+            <p><strong>Intereses:</strong></p>
+            <ul id="intereses-lista">
+                ${this.intereses.map(interes => `<li>${interes}</li>`).join('')}
+            </ul>
+        `;
     }
 }
 
 // Crear y utilizar objetos de la clase Persona
-let persona1 = new Persona('Dawny', 21, ['Programación', 'Desarrollo web',]);
-let persona2 = new Persona('jOSEFA', 25, ['Leer', 'Viajar']);
+let persona = null;
 
-persona1.mostrarInformacion();
-persona1.añadirInteres('Cocinar');
-persona1.eliminarInteres('Desarrollo web');
-persona1.mostrarInformacion();
+document.getElementById('crearPersonaBtn').addEventListener('click', () => {
+    const nombre = document.getElementById('nombre').value;
+    const edad = document.getElementById('edad').value;
+    persona = new Persona(nombre, edad ? parseInt(edad) : null);
+    persona.mostrarInformacion();
+});
 
-persona2.mostrarInformacion();
-persona2.añadirInteres('Cine');
-persona2.eliminarInteres('Viajar');
-persona2.mostrarInformacion();
+document.getElementById('añadirInteresBtn').addEventListener('click', () => {
+    if (persona) {
+        const interes = document.getElementById('interes').value;
+        persona.añadirInteres(interes);
+        persona.mostrarInformacion();
+    }
+});
+
+document.getElementById('eliminarInteresBtn').addEventListener('click', () => {
+    if (persona) {
+        const interes = document.getElementById('interes').value;
+        persona.eliminarInteres(interes);
+        persona.mostrarInformacion();
+    }
+});
