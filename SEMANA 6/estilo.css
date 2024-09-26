@@ -1,0 +1,47 @@
+/* estilo.css */
+
+/* Style the h1 element */
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+/* Style the p element */
+p {
+    color: gray;
+    font-size: 16px;
+}
+
+/* Style the h2 element */
+h2 {
+    color: green;
+    font-size: 20px;
+}
+
+/* Style the ul element */
+ul {
+    color: red;
+    font-size: 14px;
+}
+
+/* Style the li elements inside the ul */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Style the pre element */
+pre {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Style the code element inside the pre */
+pre code {
+    color: black;
+}
+
+/* Style the console.log output */
+.console-log {
+    color: purple;
+    font-style: italic;
+}
