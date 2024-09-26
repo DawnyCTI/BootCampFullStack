@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPESCRIPT</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Typescript</h1>
+    <p>Typescript es un lenguaje de programación que añade un sistema de tipos estáticos a JavaScript. Typescript es un superconjunto de JavaScript, lo que significa que cualquier programa de JavaScript es también un programa de Typescript. Typescript fue creado por Microsoft y es mantenido por Microsoft y la comunidad de software libre.</p>
+    <h2>Características de Typescript</h2>
+    <ul>
+        <li>Typescript es un superconjunto de JavaScript.</li>
+        <li>Typescript añade un sistema de tipos estáticos a JavaScript.</li>
+        <li>Typescript es un lenguaje de programación de código abierto.</li>
+        <li>Typescript es un lenguaje de programación que se puede ejecutar en cualquier navegador o en cualquier host que admita JavaScript.</li>
+        <li>Typescript es un lenguaje de programación que se puede ejecutar en cualquier sistema operativo.</li>
+        <li>Typescript es un lenguaje de programación que se puede ejecutar en cualquier dispositivo que admita JavaScript.</li>
+        <li>Typescript es un lenguaje de programación que se puede ejecutar en cualquier dispositivo que admita JavaScript.</li>
+    </ul>
+    <h2>Tipos de datos en Typescript</h2>
+    <p>Typescript tiene los siguientes tipos de datos:</p>
+    <ul>
+        <li>number: se utiliza para representar números.</li>
+        <li>string: se utiliza para representar cadenas de texto.</li>
+        <li>boolean: se utiliza para representar valores booleanos (true o false).</li>
+        <li>any: se utiliza para representar cualquier tipo de dato.</li>
+        <li>void: se utiliza para representar la ausencia de tipo.</li>
+        <li>array: se utiliza para representar arreglos de datos.</li>
+        <li>tuple: se utiliza para representar arreglos de datos con un número fijo de elementos.</li>
+        <li>enum: se utiliza para representar un conjunto de valores.</li>
+        <li>null: se utiliza para representar la ausencia de valor.</li>
+        <li>undefined: se utiliza para representar un valor no definido.</li>
+        <li>never: se utiliza para representar un valor que nunca ocurre.</li>
+    </ul>
+    <h2>Variables en Typescript</h2>        
+    <p>Para declarar una variable en Typescript se utiliza la palabra reservada var, let o const seguida del nombre de la variable y, opcionalmente, de su tipo. Por ejemplo:</p>
+    <pre>
+        <code>
+            var nombre: string = "Juan";
+            let edad: number = 25;
+            const PI: number = 3.1416;
+        </code>
+    </pre>
+    <h2>Funciones en Typescript</h2>
+    <p>Para declarar una función en Typescript se utiliza la palabra reservada function seguida del nombre de la función, de sus parámetros y de su tipo de retorno. Por ejemplo:</p>
+    <pre>
+        <code>
+            function suma(a: number, b: number): number {
+                return a + b;
+            }
+        </code>
+    </pre>
+    <h2>Clases en Typescript</h2>
+    <p>Para declarar una clase en Typescript se utiliza la palabra reservada class seguida del nombre de la clase, de sus atributos y de sus métodos. Por ejemplo:</p>
+    <pre>
+        <code>
+            class Persona {
+                nombre: string;
+                edad: number;
+
+                constructor(nombre: string, edad: number) {
+                    this.nombre = nombre;
+                    this.edad = edad;
+                }
+
+                saludar(): void {
+                    console.log("Hola, mi nombre es " + this.nombre + " y tengo " + this.edad + " años.");
+                }
+            }
+        </code>
+    </pre>
+    <h2>Interfaces en Typescript</h2>
+    <p>Para declarar una interfaz en Typescript se utiliza la palabra reservada interface seguida del nombre de la interfaz, de sus atributos y de sus métodos. Por ejemplo:</p>
+    <pre>
+        <code>
+            interface Figura {
+                area(): number;
+                perimetro(): number;
+            }
+        </code>
+    </pre>
+    <h2>Herencia en Typescript</h2>
+    <p>Para declarar una clase que hereda de otra clase en Typescript se utiliza la palabra reservada extends seguida del nombre de la clase de la que se hereda. Por ejemplo:</p>
+    <pre>
+        <code>
+            class Empleado extends Persona {
+                sueldo: number;
+
+                constructor(nombre: string, edad: number, sueldo: number) {
+                    super(nombre, edad);
+                    this.sueldo = sueldo;
+                }
+
+                trabajar(): void {
+                    console.log("Estoy trabajando y gano " + this.sueldo + " dólares al mes.");
+                }
+            }
+        </code>
+</body>
+</html>
